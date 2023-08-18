@@ -10,7 +10,10 @@ import unchecked_mails, checked_mails
 
 
 #Database connections
-client=pymongo.MongoClient("mongodb+srv://shubhamsrivastava:hzQ2IckGfmoJb4XS@emailreader.elzbauk.mongodb.net/")
+try:
+    client=pymongo.MongoClient("mongodb+srv://shubhamsrivastava:hzQ2IckGfmoJb4XS@emailreader.elzbauk.mongodb.net/")
+except:
+    st.write("Connection Could not be Established with database")
 #client = pymongo.MongoClient(**st.secrets["mongo"])
 #client=pymongo.MongoClient("mongodb+srv://st.secrets.db_username:st.secrets.db_password@emailreader.elzbauk.mongodb.net/")
 
