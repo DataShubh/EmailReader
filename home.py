@@ -8,10 +8,12 @@ import re
 import unchecked_mails, checked_mails
 
 
+username = st.secrets.db_username
+password = st.secrets.db_password
 
 #Database connections
 try:
-    client=pymongo.MongoClient("mongodb+srv://st.secrets.db_username:st.secrets.db_password@emailreader.elzbauk.mongodb.net/")
+    client=pymongo.MongoClient("mongodb+srv://{username}:{password}@emailreader.elzbauk.mongodb.net/")
     #client=pymongo.MongoClient("mongodb+srv://shubhamsrivastava:hzQ2IckGfmoJb4XS@emailreader.elzbauk.mongodb.net/")
 except:
     st.write("Connection Could not be Established with database")
