@@ -8,7 +8,7 @@ st.set_page_config(page_title="Email Reader App", page_icon="📧")
 st.subheader("Welcome to Email Reader")
 
 # Load configuration from YAML file
-with open('./.streamlit/config.yaml') as file:
+with open('./config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 # Initialize the authenticator
