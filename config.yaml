@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    amar:
+      email: areply505@gmail.com
+      name: Amar Roy
+      password: $2b$12$XKsRPC1tSE/lML87q6x1m.7KDmXwQ/ofR39u7NT3wHqESNckoAxRO # To be replaced with hashed password
+    shubham:
+      email: shubham.srivastava@vedsu.com
+      name: Shubham Srivastava
+      password: $2b$12$WgEIz3hLNDiGs7ijFpvJmOktrws8cetFqqo7Qd2Ynr4psJlMOhFwy # To be replaced with hashed password
+cookie:
+  expiry_days: 0
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com
