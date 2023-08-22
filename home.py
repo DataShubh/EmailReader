@@ -17,13 +17,9 @@ try:
     mongo_uri = mongo_uri_template.format(username=db_username, password=db_password)
 
     client = pymongo.MongoClient(mongo_uri)
-
-    #client=pymongo.MongoClient("mongodb+srv://{username}:{password}@emailreader.elzbauk.mongodb.net/")
-    #client=pymongo.MongoClient("mongodb+srv://shubhamsrivastava:hzQ2IckGfmoJb4XS@emailreader.elzbauk.mongodb.net/")
 except:
     st.write("Connection Could not be Established with database")
-#client = pymongo.MongoClient(**st.secrets["mongo"])
-#client=pymongo.MongoClient("mongodb+srv://st.secrets.db_username:st.secrets.db_password@emailreader.elzbauk.mongodb.net/")
+
 
 #  Database
 db= client['EmailDatabase']
